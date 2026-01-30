@@ -51,7 +51,7 @@ Environment Overview
 
 Detection & Alerting
 
-<img width="1080" height="1080" alt="Untitled design" src="https://github.com/user-attachments/assets/495ae46f-ba40-41a6-adb8-896237b412a4" />
+<img width="1080" height="1080" alt="Untitled design" src="https://github.com/user-attachments/assets/7c735192-d8fe-45cf-a1db-13abf67fdad2" />
 Setting up the alert with schedulued analytics, with added IP entity mapping enrichment. 
 
 Primary detection via Windows Security Events
@@ -64,7 +64,7 @@ High volume of:
 Investigation & Analysis:
   Authentication Analysis
 
-<img width="2402" height="1502" alt="scrnli_0JO32b8KwNWGT0" src="https://github.com/user-attachments/assets/6d830091-01dd-400e-b13b-0b0c0024382d" />
+<img width="2402" height="1502" alt="scrnli_0JO32b8KwNWGT0" src="https://github.com/user-attachments/assets/fe7bd542-7bbe-40c9-9ddd-dafc35b85adf" />
 Reviewed all EventID 4624 (Successful Logons) against EventID 2625 (Failed Logons)
 
 LogonTypes observed:
@@ -73,7 +73,7 @@ LogonTypes observed:
 
 - Type 5 – Service logons
 
-<img width="2000" height="1600" alt="The only successful logons were by a French InfoSec company" src="https://github.com/user-attachments/assets/b5dcfef7-8fb6-4673-801a-3221a85e6e19" />
+<img width="2000" height="1600" alt="The only successful logons were by a French InfoSec company" src="https://github.com/user-attachments/assets/9f8c7872-bc43-4af7-8387-4984eac5b286" />
 This IpAddress was the only known entity to achieve "successful" logon attempts, which after checking the address against IP abuse open source sites revealed to be a french infosec company running ipv4 reconnaissance. "Successful" ANONYMOUS LOGON - They established an SMB null session to gather information.
 Why it shows as "Successful":
 Windows logs anonymous SMB connections as successful logons because technically a session was established.

@@ -2,6 +2,8 @@
 Azure Honeypot - Brute Force Investigation &amp; Incident Closure - Alerting &amp; Investigation into bruteforce attempts, checking to see if successful actions were taken against the machine.
 Deployed a deliberately exposed Windows VM in Azure to observe real-world attack behaviour and analyse authentication events using Microsoft Sentinel.
 
+Lockhead martin's Cyber Kill Chain indicates that reconnaissance is the first step in the attack chain bad actors utilize as apart of their attack against cyber defences.
+
  - Detected high volumes of failed logons (EventID 4625) from global IPs, consistent with automated brute-force reconnaissance
 
  - Analysed all successful logons (EventID 4624) by LogonType
@@ -17,6 +19,8 @@ Deployed a deliberately exposed Windows VM in Azure to observe real-world attack
  - Removed permissive NSG rule to contain exposure
 
  - Performed post-remediation monitoring to confirm no persistence or follow-on activity
+
+
 
 Outcome:
 Incident classified as low-risk brute-force reconnaissance with no compromise. Demonstrates hands-on SOC investigation, log analysis, KQL querying, cloud security hardening, and incident lifecycle closure. Highlighting the importance of securing infrastructure and properly setting security controls to mitigate potential risk vectors.
